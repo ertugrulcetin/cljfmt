@@ -5,4 +5,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :eval-in-leiningen true
+  :deploy-repositories [["clojars" {:sign-releases false :url "https://clojars.org/repo"}]
+                        ["releases" {:sign-releases false :url "https://clojars.org/repo"}]
+                        ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]]
   :dependencies [[ertu/cljfmt "0.1.0"]])
