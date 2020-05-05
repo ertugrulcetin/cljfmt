@@ -8,4 +8,4 @@
   :deploy-repositories [["clojars" {:sign-releases false :url "https://clojars.org/repo"}]
                         ["releases" {:sign-releases false :url "https://clojars.org/repo"}]
                         ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]]
-  :dependencies [[ertu/cljfmt "0.1.0"]])
+  :dependencies [[ertu/cljfmt "0.1.1"]])
