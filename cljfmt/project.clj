@@ -1,4 +1,4 @@
-(defproject cljfmt "0.6.7"
+(defproject ertu/cljfmt "0.1.0"
   :description "A library for formatting Clojure code"
   :url "https://github.com/weavejester/cljfmt"
   :scm {:dir ".."}
@@ -10,6 +10,9 @@
                  [com.googlecode.java-diff-utils/diffutils "1.3.0"]
                  [rewrite-clj "0.6.1"]
                  [rewrite-cljs "0.4.4"]]
+  :deploy-repositories [["clojars" {:sign-releases false :url "https://clojars.org/repo"}]
+                        ["releases" {:sign-releases false :url "https://clojars.org/repo"}]
+                        ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]]
   :plugins [[lein-cljsbuild "1.1.7"]]
   :hooks [leiningen.cljsbuild]
   :cljsbuild {:builds
