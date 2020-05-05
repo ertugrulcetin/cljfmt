@@ -431,7 +431,7 @@
   (or (re-find #"\r?\n" s) default-line-separator))
 
 (defn add-more-newlines [s]
-  (str/replace s #"\n{2}" "\n\n\n"))
+  (str/replace s #"\n{2,}" "\n\n\n"))
 
 (defn wrap-normalize-newlines
   ([f]
